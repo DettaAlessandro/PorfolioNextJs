@@ -23,6 +23,14 @@ export const Navbar = () => {
                         Works
                     </Link>
                     <Link 
+                        href='/gallery' 
+                        className={`mx-2 px-10 py-1 rounded transition ${
+                            pathname === "/gallery" ? "underline underline-offset-3 decoration-white hover:bg-white hover:text-black" : "hover:bg-white hover:text-black"
+                        }`}
+                    >
+                        Gallery
+                    </Link>
+                    <Link 
                         href='/contact' 
                         className={`mx-2 px-10 py-1 rounded transition ${
                             pathname === "/contact" ? "underline underline-offset-3 decoration-white hover:bg-white hover:text-black" : "hover:bg-white hover:text-black"
